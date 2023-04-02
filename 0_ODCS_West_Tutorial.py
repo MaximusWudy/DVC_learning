@@ -87,3 +87,5 @@ dvc exp run --run-all --jobs 2 # now we run it, 2 jobs at the same time
 #### Once we find the best model, we apply the best model
 # it goes through the DVC tracking and this is the one you want to apply to all meta files (and upload to repo)
 dvc exp apply hilly-hoot
+# apply the changes to github repo
+git add .; git commit -m "ran an exp"; git push
