@@ -1,3 +1,5 @@
+#### Tutorial Slide: https://speakerdeck.com/flippedcoder/using-reproducible-experiments-to-create-better-models?slide=14
+
 conda activate iterative_ai
 
 #### This tutorial will be focusing on the model experiment part of a data science project. 
@@ -91,4 +93,12 @@ dvc exp apply hilly-hoot
 git add .; git commit -m "best exp so far"; git push
 
 #### BONUS Section
-# Use CML to automate 
+# Use CML to automate, will generate a similar report with code comparison and performance summary table in Github
+# You can also use Iterative Studio for online experiment tracking
+
+#### Takeaways
+    """
+    - Adding reproducibility to experiments is important
+    - Using DVC helps you track every part of your experiment
+    - Don't be afraid to try new tools
+    """
