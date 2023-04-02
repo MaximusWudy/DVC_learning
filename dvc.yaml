@@ -2,17 +2,25 @@ stages:
   train:
     cmd: python pretrained_model_tuner.py
     deps:
-      - hymenoptera_data/
-      - pretrained_model_tuner.py
+    - hymenoptera_data/
+    - pretrained_model_tuner.py
     params:
-      - lr
-      - momentum
-      - model_name
-      - num_classes
-      - batch_size
-      - num_epochs
+    - lr
+    - momentum
+    - model_name
+    - num_classes
+    - batch_size
+    - num_epochs
     outs:
-      - model.pt
+    - model.pt
     metrics:
     - results.json:
         cache: false
+  training:
+    cmd: momemtum, model_name, num_classes, batch_size, num_epochs --outputs model.pt
+      --metrics-no-cache results.json python pretrained_model_tuner.py
+    deps:
+    - hymenoptera_data/
+    - pretrained_model_tuner.py
+    params:
+    - lr
