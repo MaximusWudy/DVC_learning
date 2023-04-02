@@ -88,4 +88,7 @@ dvc exp run --run-all --jobs 2 # now we run it, 2 jobs at the same time
 # it goes through the DVC tracking and this is the one you want to apply to all meta files (and upload to repo)
 dvc exp apply hilly-hoot
 # apply the changes to github repo
-git add .; git commit -m "ran an exp"; git push
+git add .; git commit -m "best exp so far"; git push
+
+#### BONUS Section
+# Use CML to automate 
