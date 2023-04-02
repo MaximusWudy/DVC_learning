@@ -38,15 +38,15 @@ stages:
     params:
       params.yaml:
         batch_size: 10
-        lr: 0.001
+        lr: 0.01
         model_name: alexnet
         momentum: 0.01
         num_classes: 2
         num_epochs: 2
     outs:
     - path: model.pt
-      md5: 132655cb68bd1b7e50ec3c5b45cabbaa
+      md5: 83266027bb98f7bc2761e62bac54f824
       size: 228052753
     - path: results.json
-      md5: 357550347605e6839baf35e96be9d83f
-      size: 105
+      md5: 544b27b0011c8e841d4460b7ee61199b
+      size: 106
