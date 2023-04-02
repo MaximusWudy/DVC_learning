@@ -8,7 +8,7 @@ stages:
     - batch_size
     - lr
     - model_name
-    - momemtum
+    - momentum
     - num_classes
     - num_epochs
     outs:

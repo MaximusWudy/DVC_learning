@@ -12,7 +12,7 @@ conda activate iterative_ai
     -- results stored in a JSON file
     Py command you will need to execute
     """
-dvc stage add --name training --deps hymenoptera_data/ --deps pretrained_model_tuner.py --params lr,momemtum,model_name,num_classes,batch_size,num_epochs --outs model.pt --metrics-no-cache results.json python pretrained_model_tuner.py
+dvc stage add --name training --deps hymenoptera_data/ --deps pretrained_model_tuner.py --params lr,momentum,model_name,num_classes,batch_size,num_epochs --outs model.pt --metrics-no-cache results.json python pretrained_model_tuner.py
 
     """Example Results
     Adding stage 'training' in 'dvc.yaml'                                 
