@@ -27,9 +27,14 @@ To enable auto staging, run:
     """
     
 #### Then we update using Git
+git remote add origin https://github.com/MaximusWudy/DVC_learning.git
+git remote set-url origin https://github.com/MaximusWudy/DVC_learning.git
+
 git add . # staged changes
 git status # check status
 git commit -m "added dvc.yaml"
+
+ git push -u origin main
 
     """
         git config --global user.email "you@example.com"
